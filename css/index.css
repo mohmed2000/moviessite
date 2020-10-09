@@ -1,0 +1,106 @@
+
+body 
+{
+    background-color: #343a40;
+    font-family: "segoe ui light";
+}
+
+.search input 
+{
+    border:none;
+    border-bottom:1px solid #fff;
+    background-color: transparent ;
+    border-radius:0;
+}
+
+
+.search input:focus 
+{
+    background-color: transparent ;
+    box-shadow: none;
+}
+input::placeholder
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.overlay 
+{
+    background-color: rgba(255,255,255,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+    transition: all 0.5s;
+    transform: scale(0);
+
+}
+.movie:hover .overlay 
+{
+    transform: scale(1);
+
+}
+
+/* =======-==================SIDE MENU==================== */
+
+#sideMenu
+{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: red;
+    z-index: 22;
+    left: -186px;
+    overflow: hidden;
+}
+
+.leftSide
+{
+    width: 75%;
+    height:100%;
+    background-color: #09c;
+    float: left;
+}
+.leftSide ul 
+{
+    height: 70%;
+    overflow: hidden;
+}
+.leftSide ul li 
+{
+    list-style: none;
+    padding-top:500px;
+}
+
+.rightSide
+{
+    width: 25%;
+    height: 100vh;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+ position: relative;
+}
+
+.rightSide img 
+{
+    width: 50px;
+    padding:20px 0;
+}
+
+.rightSide  #close
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 25px;
+    cursor: pointer;
+}
+
